@@ -93,7 +93,7 @@ router.delete('/:id', async (request, response) => {
 
     const result = await Book.findByIdAndDelete(id);
 
-    if(result) {
+    if(!result) {
       return response.status(404).json({ message: 'Book not found '})
     }
 
