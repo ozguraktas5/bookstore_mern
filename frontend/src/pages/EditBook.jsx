@@ -59,7 +59,7 @@ const EditBook = () => {
       <BackButton />
       <h1 className='text-3xl my-5'>Edit Book</h1>
       {loading ? <Spinner /> : ''}
-      <div className='flex flex-col border-2 border-slate-500 rounded-xl w-[600px] p-4'>
+      <div className='flex flex-col border-2 border-slate-500 rounded-xl w-[600px] p-4 bg-yellow-100'>
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Title</label>
           <input 
