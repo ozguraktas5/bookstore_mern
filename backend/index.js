@@ -14,8 +14,6 @@ app.use(
   cors({
     origin: "https://bookstore-mern-api.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
-    
-    
   })
 );
 
