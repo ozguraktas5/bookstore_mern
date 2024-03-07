@@ -15,15 +15,9 @@ app.use(
     origin: "https://bookstore-mern-api.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     
+    
   })
 );
-
-app.use(function (request, response, next) {
-  response.header("Access-Control-Allow-Origin", "*");
-  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-
 
 app.get("/", (request, response) => {
   console.log(request);
