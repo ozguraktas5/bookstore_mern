@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://bookstore-mern-backend-6628.onrender.com/',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
   })
